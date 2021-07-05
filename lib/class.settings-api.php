@@ -483,7 +483,16 @@ class WeDevs_Settings_API {
      */
     function show_navigation() {
         $html = '<h2 class="nav-tab-wrapper">';
-
+        $html .= '<input type="text" id="wpuf-settings-search" placeholder="Search in settings" style="width: 100%;
+    height: 46px;
+    background: #f1f1f1;
+    border: 0;
+    border-bottom: 1px solid #c8d7e1;
+    border-radius: 0;
+    margin: 0;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 0 15px;">';
         $count = count( $this->settings_sections );
 
         // don't show the navigation if only one section exists
