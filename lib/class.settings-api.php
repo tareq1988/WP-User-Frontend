@@ -339,9 +339,10 @@ class WeDevs_Settings_API {
         echo '<div style="max-width: ' . $size . ';">';
 
         $editor_settings = array(
-            'teeny'         => true,
-            'textarea_name' => $args['section'] . '[' . $args['id'] . ']',
-            'textarea_rows' => 10
+            'teeny'          => true,
+            'textarea_name'  => $args['section'] . '[' . $args['id'] . ']',
+            'textarea_rows'  => 10,
+            'media_buttons' => false
         );
 
         if ( isset( $args['options'] ) && is_array( $args['options'] ) ) {

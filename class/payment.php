@@ -284,7 +284,7 @@ class WPUF_Payment {
                                             </label>
 
                                             <div class="wpuf-payment-instruction" style="display: none;">
-                                                <div class="wpuf-instruction"><?php echo esc_html( wpuf_get_option( 'gate_instruct_' . esc_html( $gateway_id ), 'wpuf_payment' ) ); ?></div>
+                                                <div class="wpuf-instruction"><?php echo wp_kses_post( wpuf_get_option( 'gate_instruct_' . esc_html( $gateway_id ), 'wpuf_payment' ) ); ?></div>
 
                                                 <?php do_action( 'wpuf_gateway_form_' . $gateway_id, $type, $post_id, $pack_id ); ?>
                                             </div>

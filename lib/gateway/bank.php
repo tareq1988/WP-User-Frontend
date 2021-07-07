@@ -26,7 +26,7 @@ class WPUF_Gateway_Bank {
         $options[] = [
             'name'    => 'gate_instruct_bank',
             'label'   => __( 'Bank Instruction', 'wp-user-frontend' ),
-            'type'    => 'textarea',
+            'type'    => 'wysiwyg',
             'default' => 'Make your payment directly into our bank account.',
         ];
 
